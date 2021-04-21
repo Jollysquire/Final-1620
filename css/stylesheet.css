@@ -23,6 +23,24 @@ footer{
 ul{
     list-style: none;
 }
+
+.checkout{
+    margin: 1em 0em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: #eb6f92;
+}
+
+.cart{
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+.item{
+    grid-row: 2;
+}
+
 .albums{
     display: flex;
     flex-direction: column;
@@ -32,8 +50,4 @@ ul{
     background-color: #31748f;
 }
 
-@media screen and (min-width: 640px) {
-    body {
-        background-color: black;
-    }
-}
+
